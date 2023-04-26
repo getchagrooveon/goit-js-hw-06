@@ -17,6 +17,6 @@ function handleSubmit(event) {
       password: password.value,
     };
     console.log(user);
+    event.currentTarget.reset();
   }
-  event.currentTarget.reset();
 }
