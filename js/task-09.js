@@ -12,6 +12,6 @@ button.addEventListener(
   'click',
   () => (
     (background.textContent = getRandomHexColor()),
-    (widget.style.backgroundColor = background.textContent)
+    (widget.parentNode.style.backgroundColor = background.textContent)
   )
 );

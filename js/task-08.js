@@ -11,13 +11,12 @@ function handleSubmit(event) {
 
   if (email.value === '' || password.value === '') {
     alert('не все заповнено');
+  } else {
+    const user = {
+      email: email.value,
+      password: password.value,
+    };
+    console.log(user);
   }
-
-  const user = {
-    email: email.value,
-    password: password.value,
-  };
-  console.log(user);
-
   event.currentTarget.reset();
 }
